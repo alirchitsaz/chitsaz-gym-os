@@ -1,119 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Chitsaz Gym OS</title>
 
-styles.css
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-s*zing:border-box;
+  font-family:-ap*le-system,BlinkMacSystemFont,"Sego* UI",sans-serif;
+}
 
-</head>
+body{
+  backgr*und:#0f1115;
+  color:white;
+}
+
+hea*er{
+  padding:20px;
+  background:#*51922;
+  border-bottom:1px solid #*a2f3a;
+}
+
+h1{
+  font-size:28px;
+}
+*.subtitle{
+  color:#8c94a7;
+  marg*n-top:8px;
+}
+
+.container{
+  paddin*:20px;
+}
+
+.card{
+  background:#191*2c;
+  border:1px solid #2b3240;
+  *order-radius:18px;
+  padding:16px;*  margin-bottom:16px;
+}
+
+.card h2{*  margin-bottom:8px;
+}
+
+.button{
+ *width:100%;
+  background:#0A84FF;
+* border:none;
+  color:white;
+  pad*ing:14px;
+  border-radius:12px;
+  *ont-size:16px;
+  cursor:pointer;
+}*
+.button:hover{
+  opacity:.95;
+}
+
+*hidden{
+  display:none;
+}
+
+#gymVie*{
+  width:100%;
+  max-width:420px;*  margin:auto;
+}
+
+svg{
+  width:100*;
+  height:auto;
+}
+</style>
+</head*
 
 <body>
 
-<div id="app">
+<header>
+  <h1>Chitsaz G*m OS</h1>
+  <div class="subtitle">*    Visual Setup Engine V1
+  </div*
+</header>
 
-  <header class="topbar">
+<div class="container"*
 
-    <div class="brand">
-      CHITSAZ GYM OS
+  <div id="homeScreen">
+
+    <di* class="card">
+      <h2>Flat Cabl* Bench Press</h2>
+      <p>Visual *etup example using your gym.</p>
+
+*     <br>
+
+      <button
+        c*ass="button"
+        onclick="show*etup()">
+        Open Visual Setup*      </button>
+
     </div>
 
-    <div id="currentUser" class="user-pill">
-      Select Profile
-    </div>
+  </d*v>
 
-  </header>
+  <div
+    id="setupScreen"
+  * class="hidden">
 
-  <main>
+    <div class="*ard">
 
-    <!-- HOME -->
+      <h2>Flat Cable Bench *ress</h2>
 
-    <section id="homeScreen" class="screen active">
+      <p style="color:#*c94a7;margin-top:8px;">
+        Ma*hine setup visualization
+      </p*
 
-      <h1>Family Fitness</h1>
+      <br>
 
-      <p class="subtitle">
-        Visual setup driven workouts for your actual gym.
-      </p>
+      <div id="gymVi*w">
 
-      <div class="profile-grid">
+        <svg
+          viewBo*="0 0 400 700">
 
-        <button class="profile-card ali"
-                onclick="selectUser('ali')">
-          <span>💪</span>
-          <strong>Ali</strong>
-        </button>
+          <!-- ma*hine -->
 
-        <button class="profile-card kristen"
-                onclick="selectUser('kristen')">
-          <span>🌸</span>
-          <strong>Kristen</strong>
-        </button>
+          <rect
+        *   x="125"
+            y="40"
+    *       width="150"
+            hei*ht="140"
+            rx="10"
+     *      fill="#2b3240"/>
 
-        <button class="profile-card kam"
-                onclick="selectUser('kam')">
-          <span>⚡</span>
-          <strong>Kam</strong>
-        </button>
+          *!-- arms -->
 
-        <button class="profile-card ashton"
-                onclick="selectUser('ashton')">
-          <span>🏃</span>
-          <strong>Ashton</strong>
-        </button>
+          <line
+    *       x1="140"
+            y1="11*"
+            x2="60"
+            *2="220"
+            stroke="#00d4f*"
+            stroke-width="8"/>
 
+*         <line
+            x1="260*
+            y1="110"
+            *2="340"
+            y2="220"
+     *      stroke="#00d4ff"
+           *stroke-width="8"/>
+
+          <!--*bench -->
+
+          <rect
+       *    x="120"
+            y="310"
+  *         width="160"
+            h*ight="40"
+            fill="#0A84F*"
+            rx="8"/>
+
+          *!-- distance line -->
+
+          <*ine
+            x1="200"
+         *  y1="180"
+            x2="200"
+  *         y2="310"
+            stro*e="white"
+            stroke-dasha*ray="8 8"/>
+
+          <text
+     *      x="215"
+            y="250"
+*           fill="white"
+          * font-size="20">
+            36"
+ *        </text>
+
+          <!-- us*r -->
+
+          <circle
+         *  cx="200"
+            cy="430"
+  *         r="18"
+            fill="*32D74B"/>
+
+          <text
+       *    x="170"
+            y="470"
+  *         fill="white"
+            *ont-size="18">
+            Athlete*          </text>
+
+        </svg>
+*      </div>
+
+      <br>
+
+      <d*v class="card">
+
+        <strong>S*ep 1</strong><br>
+        Move bot* arms outward.
+
+        <br><br>
+
+        <strong>Step 2</strong><br>
+        Place bench 36" from machine.
+
+        <br><br>
+
+        <strong>Step 3</strong><br>
+        Head toward machine.
+
+        <br><br>
+
+        <strong>Step 4</strong><br>
+        Attach D-handles.
       </div>
 
-      <div class="section-title">
-        Workouts
-      </div>
-
-      <div id="workoutList">
-      </div>
-
-    </section>
-
-    <!-- SETUP SCREEN -->
-
-    <section id="setupScreen" class="screen">
-
-      <button class="back-btn" onclick="goHome()">
-        ← Back
+      <button
+        class="button"
+        onclick="goHome()">
+        Back
       </button>
 
-      <h1 id="setupTitle">
-        Setup
-      </h1>
+    </div>
 
-      <div id="setupSubtitle"
-           class="subtitle">
-      </div>
-
-      <div id="machineCanvas">
-      </div>
-
-      <div class="start-row">
-        <button
-          id="startWorkoutBtn"
-          class="primary-btn">
-          Start Workout
-        </button>
-      </div>
-
-    </section>
-
-  </main>
+  </div>
 
 </div>
 
-exercise-data.jsscript>
-setup-engine.jsscript>
-app.jsscript>
+<script>
+
+function showSetup(){
+
+  document
+    .getElementById("homeScreen")
+    .classList.add("hidden");
+
+  document
+    .getElementById("setupScreen")
+    .classList.remove("hidden");
+
+}
+
+function goHome(){
+
+  document
+    .getElementById("setupScreen")
+    .classList.add("hidden");
+
+  document
+    .getElementById("homeScreen")
+    .classList.remove("hidden");
+
+}
+
+</script>
 
 </body>
 </html>
