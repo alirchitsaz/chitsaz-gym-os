@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+/>
+
+<title>Chitsaz Gym OS</title>
+
+styles.css
+
+</head>
+
+<body>
+
+<div id="app">
+
+  <header class="topbar">
+
+    <div class="brand">
+      CHITSAZ GYM OS
+    </div>
+
+    <div id="currentUser" class="user-pill">
+      Select Profile
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+
+    <section id="homeScreen" class="screen active">
+
+      <h1>Family Fitness</h1>
+
+      <p class="subtitle">
+        Visual setup driven workouts for your actual gym.
+      </p>
+
+      <div class="profile-grid">
+
+        <button class="profile-card ali"
+                onclick="selectUser('ali')">
+          <span>💪</span>
+          <strong>Ali</strong>
+        </button>
+
+        <button class="profile-card kristen"
+                onclick="selectUser('kristen')">
+          <span>🌸</span>
+          <strong>Kristen</strong>
+        </button>
+
+        <button class="profile-card kam"
+                onclick="selectUser('kam')">
+          <span>⚡</span>
+          <strong>Kam</strong>
+        </button>
+
+        <button class="profile-card ashton"
+                onclick="selectUser('ashton')">
+          <span>🏃</span>
+          <strong>Ashton</strong>
+        </button>
+
+      </div>
+
+      <div class="section-title">
+        Workouts
+      </div>
+
+      <div id="workoutList">
+      </div>
+
+    </section>
+
+    <!-- SETUP SCREEN -->
+
+    <section id="setupScreen" class="screen">
+
+      <button class="back-btn" onclick="goHome()">
+        ← Back
+      </button>
+
+      <h1 id="setupTitle">
+        Setup
+      </h1>
+
+      <div id="setupSubtitle"
+           class="subtitle">
+      </div>
+
+      <div id="machineCanvas">
+      </div>
+
+      <div class="start-row">
+        <button
+          id="startWorkoutBtn"
+          class="primary-btn">
+          Start Workout
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+exercise-data.jsscript>
+setup-engine.jsscript>
+app.jsscript>
+
+</body>
+</html>
